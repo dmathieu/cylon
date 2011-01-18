@@ -5,8 +5,7 @@ describe "Cylon Rack Middleware" do
   let(:app) { Cylon::Rack.new(Cylon::TestingRackApp.new) }
   
   before :each do
-    Object.send(:remove_const, :RACK_ENV)
-    RACK_ENV = "test"
+    ENV['RACK_ENV'] = "test"
   end
   
   it "should not be indexable" do
@@ -26,8 +25,7 @@ describe "Cylon Rack Middleware" do
   end
   
   it "should be indexable if we are in production" do
-    Object.send(:remove_const, :RACK_ENV)
-    RACK_ENV = "production"
+    ENV['RACK_ENV'] = "production"
     get '/robots.txt'
     last_response.should be_ok
     last_response.body.should_not eql("User-Agent: *\nDisallow: /")

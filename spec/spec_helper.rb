@@ -1,4 +1,4 @@
-RACK_ENV = "test"
+ENV['RACK_ENV'] = "test"
 
 require 'rspec'
 require 'rack/test'

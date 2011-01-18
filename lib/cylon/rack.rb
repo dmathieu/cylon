@@ -6,7 +6,7 @@ module Cylon
     end
     
     def call(env)
-      if env["PATH_INFO"] == "/robots.txt" && RACK_ENV != "production"
+      if env["PATH_INFO"] == "/robots.txt" && ENV['RACK_ENV'] != "production"
         [200, {"Content-Type" => "text/plain"}, ["User-Agent: *\nDisallow: /"]]
       else
         @app.call(env)
