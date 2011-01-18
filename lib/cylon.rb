@@ -6,6 +6,8 @@ module Cylon
   
 end
 
-if defined?(Rails::Engine)
+begin
   require 'cylon/rails'
+rescue NameError
+  # Rails::Engine is not defined. This is not a rails engine.
 end
