@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "cylon"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.summary     = "Rack middleware and Rails Engine to avoid indexing your application in staging"
   s.email       = "42@dmathieu.com"
   s.homepage    = "http://github.com/dmathieu/cylon"
