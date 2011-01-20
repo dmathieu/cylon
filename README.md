@@ -14,6 +14,13 @@ In any other way, you have to add the `Cylon::Rack` middleware to your applicati
     use Cylon::Rack
     run Your::App
 
+## What about my robots.txt file in production ?
+
+Whenever you are in production, cylon doesn't do anything. It just continues with the application.  
+So you can, inside of your application, render any content in your robots.txt if you want to disallow indexation for a file or directory.
+
+In any other environment though, we won't call your application's methods for the robots.txt url. So you have to have ENV['RACK_ENV'] defined at "production" if you want to test your own robots.txt file.
+
 ## Contributing
 
 If you think Cylon is great but can be improved, feel free to contribute. To do so, you can :
