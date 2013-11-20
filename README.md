@@ -1,6 +1,7 @@
 # Cylon
 
 Disallows indexation by search engines (with the robots.txt file) whenever you're not in production.
+[![Build Status](https://travis-ci.org/dmathieu/cylon.png)](https://travis-ci.org/dmathieu/cylon)
 
 ## Installation
 

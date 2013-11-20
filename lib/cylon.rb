@@ -3,7 +3,7 @@ require "bundler/setup"
 
 module Cylon
   autoload :Rack, 'cylon/rack'
-  
+
 end
 
 begin

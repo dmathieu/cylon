@@ -1,8 +1,8 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "rake"
+gem 'rake'
 
 group :test do
-  gem "rspec", '2.4.0'
-  gem "rack-test"
+  gem 'rspec'
+  gem 'rack-test'
 end
