@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.homepage    = "http://github.com/dmathieu/cylon"
   s.description = "Rack middleware and Rails Engine to avoid indexing your application in staging"
   s.authors     = ['Damien Mathieu']
+  s.license     = "MIT"
 
   s.rubyforge_project = "cylon"
 
